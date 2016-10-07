@@ -1,0 +1,48 @@
+@main-color: #9f449b;
+
+html,body,h1 { //reset css
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: Lato-Thin;
+  src: local("Lato-Thin"),
+  url("../resources/Fonts/Lato2OFL/Lato-Thin.ttf");
+}
+
+html, body {
+  height: 100%;
+}
+  .logo {
+    font-family: Lato-Thin;
+      strong {
+        color: @main-color;
+      }
+  }
+  .header {
+  text-align: center;
+  height: 100%;
+  background-image: url("../resources/Images/main.png");
+  background-position: center;
+  color: white;
+  padding: 50px;
+  box-sizing: border-box;
+    .main-logo {
+      font-size: 90px;
+    }
+    h2,p {
+      font-family: Lato-Thin;
+    }
+    h2 {
+      font-size: 48px;
+    }
+    p {
+      font-size: 34px;
+    }
+}
+@media (min-width: 2000px) {
+  .header {
+    background-size: 100%;
+  }
+}
