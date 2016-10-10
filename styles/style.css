@@ -18,6 +18,12 @@ body {
 .logo strong {
   color: #9f449b;
 }
+.hexagon {
+  fill: #ffffff;
+  fill-opacity: 0.10;
+  stroke: #ffffff;
+  stroke-width: 4.00px;
+}
 .header {
   text-align: center;
   height: 100%;
