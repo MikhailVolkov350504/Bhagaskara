@@ -10,6 +10,11 @@ html,body,h1 { //reset css
   src: local("Lato-Thin"),
   url("../resources/Fonts/Lato2OFL/Lato-Thin.ttf");
 }
+@font-face {
+  font-family: Lato-Regular;
+  src: local("Lato-Regular"),
+  url("../resources/Fonts/Lato2OFL/Lato-Regular.ttf");
+}
 
 html, body {
   height: 100%;
@@ -45,6 +50,53 @@ html, body {
     }
     p {
       font-size: 34px;
+    }
+    .header-nav {
+      // .header-nav-block {
+        // display: inline-block;
+      width: 60%;
+      display: inline-block;
+      .header-nav-left {
+        float: left;
+      }
+      .header-nav-right {
+        float: right;
+      }
+      .header-nav-block {
+        .bubble {
+          fill: url("../resources/Icons/bubble.png");
+        }
+        .hexagon-caption {
+          fill: white;
+          font-family: Lato-Regular;
+          font-size: 20px;
+        }
+        a:hover .hexagon {
+          fill: @main-color;
+          fill-opacity: 1;
+          stroke: @main-color;
+          stroke-width: 4.00px;
+        }
+        a:hover .hexagon-caption {
+          fill: white;
+        }
+
+      }
+      // ul {
+      //     list-style-type: none;
+      //     margin: 0;
+      //     padding: 0;
+      //     height: 300px;
+      //   li {
+      //       display: inline-block;
+      //       margin-right: 25px;
+      //       &:last-child {
+      //         margin-right: 0;
+      //       }
+
+      //   }
+      //
+      // }
     }
 }
 @media (min-width: 2000px) {

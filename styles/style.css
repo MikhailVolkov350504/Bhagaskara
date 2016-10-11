@@ -8,6 +8,10 @@ h1 {
   font-family: Lato-Thin;
   src: local("Lato-Thin"), url("../resources/Fonts/Lato2OFL/Lato-Thin.ttf");
 }
+@font-face {
+  font-family: Lato-Regular;
+  src: local("Lato-Regular"), url("../resources/Fonts/Lato2OFL/Lato-Regular.ttf");
+}
 html,
 body {
   height: 100%;
@@ -45,6 +49,33 @@ body {
 }
 .header p {
   font-size: 34px;
+}
+.header .header-nav {
+  width: 60%;
+  display: inline-block;
+}
+.header .header-nav .header-nav-left {
+  float: left;
+}
+.header .header-nav .header-nav-right {
+  float: right;
+}
+.header .header-nav .header-nav-block .bubble {
+  fill: url("../resources/Icons/bubble.png");
+}
+.header .header-nav .header-nav-block .hexagon-caption {
+  fill: white;
+  font-family: Lato-Regular;
+  font-size: 20px;
+}
+.header .header-nav .header-nav-block a:hover .hexagon {
+  fill: #9f449b;
+  fill-opacity: 1;
+  stroke: #9f449b;
+  stroke-width: 4.00px;
+}
+.header .header-nav .header-nav-block a:hover .hexagon-caption {
+  fill: white;
 }
 @media (min-width: 2000px) {
   .header {
