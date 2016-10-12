@@ -1,10 +1,11 @@
 @main-color: #9f449b;
+@header-color: #666666;
+@background-color: #eeeeee;
 
-html,body,h1 { //reset css
+html,body,h1, ul, li { //reset css
   margin: 0;
   padding: 0;
 }
-
 @font-face {
   font-family: Lato-Thin;
   src: local("Lato-Thin"),
@@ -19,12 +20,46 @@ html,body,h1 { //reset css
 html, body {
   height: 100%;
 }
+.bubble {
+  background: url("../resources/Icons/bubble.png");
+  width: 50px;
+  height: 50px;
+}
+  .main-header-link {
+    &:link {
+      text-decoration:none;
+      color: white;
+      } /* непосещенная ссылка */
+    &:visited {
+      text-decoration:none;
+      color: white;
+      } /* посещенная ссылка */
+    &:hover {
+      text-decoration:none;
+      color: white;
+      } /* ссылка, над которой находится курсор мыши */
+  }
+  .header-link {
+    &:link {
+      text-decoration:none;
+      color: @header-color;
+      } /* непосещенная ссылка */
+    &:visited {
+      text-decoration:none;
+      color: @header-color;
+      } /* посещенная ссылка */
+    &:hover {
+      text-decoration:none;
+      color: @header-color;
+      } /* ссылка, над которой находится курсор мыши */
+  }
   .logo {
     font-family: Lato-Thin;
       strong {
         color: @main-color;
       }
   }
+
   .hexagon {
     fill: rgb(255,255,255);
     fill-opacity: 0.10;
@@ -52,8 +87,6 @@ html, body {
       font-size: 34px;
     }
     .header-nav {
-      // .header-nav-block {
-        // display: inline-block;
       width: 60%;
       display: inline-block;
       .header-nav-left {
@@ -82,22 +115,76 @@ html, body {
         }
 
       }
-      // ul {
-      //     list-style-type: none;
-      //     margin: 0;
-      //     padding: 0;
-      //     height: 300px;
-      //   li {
-      //       display: inline-block;
-      //       margin-right: 25px;
-      //       &:last-child {
-      //         margin-right: 0;
-      //       }
-
-      //   }
-      //
-      // }
     }
+}
+.nav {
+  font-family: Lato-Regular;
+  font-size: 20px;
+  width: 60%;
+  line-height: 143px;
+  margin: auto;
+  .nav-logo {
+    display: inline-block;
+    float: left;
+    vertical-align: middle;
+  }
+  .nav-list {
+    display: inline-block;
+    list-style-type: none;
+
+    float: right;
+    vertical-align: middle;
+
+    li {
+      font-size: 15px;
+      display: inline-block;
+      margin-right: 25px;
+      &:last-child {
+        margin-right: 0;
+      }
+      a {
+        &:link {
+          text-decoration:none;
+          color: @header-color;
+          } /* непосещенная ссылка */
+        &:visited {
+          text-decoration:none;
+          color: @header-color;
+          } /* посещенная ссылка */
+        &:hover {
+          text-decoration:none;
+          color: @main-color;
+          } /* ссылка, над которой находится курсор мыши */
+      }
+    }
+  }
+  &:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+}
+.main {
+  .benefits {
+    height: 795px;
+    background-color: @background-color;
+    a {
+      .benefit-hexagon {
+        // fill: rgb(255,255,255);
+        fill-opacity: 0;
+        stroke: #ccd0d2;;
+        stroke-width: 4.00px;
+      }
+      &:hover .benefit-hexagon {
+        // fill: @main-color;
+        // fill-opacity: 1;
+        stroke: @main-color;
+        stroke-width: 4.00px;
+      }
+    }
+  }
 }
 @media (min-width: 2000px) {
   .header {

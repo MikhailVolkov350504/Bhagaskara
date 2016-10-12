@@ -1,6 +1,8 @@
 html,
 body,
-h1 {
+h1,
+ul,
+li {
   margin: 0;
   padding: 0;
 }
@@ -15,6 +17,45 @@ h1 {
 html,
 body {
   height: 100%;
+}
+.bubble {
+  background: url("../resources/Icons/bubble.png");
+  width: 50px;
+  height: 50px;
+}
+.main-header-link {
+  /* непосещенная ссылка */
+  /* посещенная ссылка */
+  /* ссылка, над которой находится курсор мыши */
+}
+.main-header-link:link {
+  text-decoration: none;
+  color: white;
+}
+.main-header-link:visited {
+  text-decoration: none;
+  color: white;
+}
+.main-header-link:hover {
+  text-decoration: none;
+  color: white;
+}
+.header-link {
+  /* непосещенная ссылка */
+  /* посещенная ссылка */
+  /* ссылка, над которой находится курсор мыши */
+}
+.header-link:link {
+  text-decoration: none;
+  color: #666666;
+}
+.header-link:visited {
+  text-decoration: none;
+  color: #666666;
+}
+.header-link:hover {
+  text-decoration: none;
+  color: #666666;
 }
 .logo {
   font-family: Lato-Thin;
@@ -76,6 +117,69 @@ body {
 }
 .header .header-nav .header-nav-block a:hover .hexagon-caption {
   fill: white;
+}
+.nav {
+  font-family: Lato-Regular;
+  font-size: 20px;
+  width: 60%;
+  line-height: 143px;
+  margin: auto;
+}
+.nav .nav-logo {
+  display: inline-block;
+  float: left;
+  vertical-align: middle;
+}
+.nav .nav-list {
+  display: inline-block;
+  list-style-type: none;
+  float: right;
+  vertical-align: middle;
+}
+.nav .nav-list li {
+  font-size: 15px;
+  display: inline-block;
+  margin-right: 25px;
+}
+.nav .nav-list li:last-child {
+  margin-right: 0;
+}
+.nav .nav-list li a {
+  /* непосещенная ссылка */
+  /* посещенная ссылка */
+  /* ссылка, над которой находится курсор мыши */
+}
+.nav .nav-list li a:link {
+  text-decoration: none;
+  color: #666666;
+}
+.nav .nav-list li a:visited {
+  text-decoration: none;
+  color: #666666;
+}
+.nav .nav-list li a:hover {
+  text-decoration: none;
+  color: #9f449b;
+}
+.nav:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.main .benefits {
+  height: 795px;
+  background-color: #eeeeee;
+}
+.main .benefits a .benefit-hexagon {
+  fill-opacity: 0;
+  stroke: #ccd0d2;
+  stroke-width: 4.00px;
+}
+.main .benefits a:hover .benefit-hexagon {
+  stroke: #9f449b;
+  stroke-width: 4.00px;
 }
 @media (min-width: 2000px) {
   .header {
