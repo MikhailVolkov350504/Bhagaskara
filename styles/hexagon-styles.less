@@ -1,0 +1,61 @@
+@main-color: #9f449b;
+@text-color: #676767;
+@background-color: #eeeeee;
+
+.hexagon-wrapper {
+  position: relative;
+  display: inline-block;
+  .hexagon {
+    stroke-width: 4.00px;
+  }
+  a:hover .hexagon {
+    stroke: @main-color;
+  }
+}
+.header {
+  .header-hexagon {
+    fill: rgb(255,255,255);
+    fill-opacity: 0.10;
+    stroke: rgb(255,255,255);
+  }
+  a:hover .header-hexagon {
+    fill: @main-color;
+    fill-opacity: 1;
+  }
+  a:hover .hexagon-caption {
+    fill: white;
+  }
+  .header-nav-block {
+    .hexagon-wrapper {
+      .hexagon-caption {
+        fill: white;
+        font-family: Lato-Regular;
+        font-size: 20px;
+      }
+      &:first-child {
+        margin-right: 25px;
+      }
+    }
+  }
+}
+
+
+.benefits {
+  .benefit-hexagon {
+    fill-opacity: 0;
+    stroke: #ccd0d2;
+  }
+}
+.scroller {
+  display: block;
+  width: 85px;
+  margin: auto;
+}
+// .bubble {
+//   background: url("../resources/Icons/bubble.png");
+//   width: 60px;
+//   height: 53px;
+//   position: absolute;
+//   left: 55px;
+//   top: 45px;
+// }

@@ -1,0 +1,98 @@
+.sprite {
+  background-image: url(../resources/Icons/spritesheet.png);
+  background-repeat: no-repeat;
+  display: block;
+  position: absolute;
+  left: 55px;
+  top: 45px;
+}
+.sprite.sprite-bubble {
+  background-position: -5px -5px;
+  width: 61px;
+  height: 54px;
+}
+.sprite.sprite-cup {
+  background-position: -5px -69px;
+  width: 54px;
+  height: 61px;
+}
+.sprite.sprite-cup-purple {
+  background-position: -5px -140px;
+  width: 54px;
+  height: 61px;
+}
+.sprite.sprite-diamond {
+  background-position: -5px -211px;
+  width: 83px;
+  height: 63px;
+}
+.sprite.sprite-diamond-purple {
+  background-position: -5px -284px;
+  width: 83px;
+  height: 63px;
+}
+.sprite.sprite-down-arrow {
+  background-position: -5px -357px;
+  width: 30px;
+  height: 17px;
+}
+.sprite.sprite-heart {
+  background-position: -5px -384px;
+  width: 71px;
+  height: 62px;
+}
+.sprite.sprite-heart-purple {
+  background-position: -5px -456px;
+  width: 71px;
+  height: 62px;
+}
+.sprite.sprite-paperplane {
+  background-position: -5px -528px;
+  width: 58px;
+  height: 58px;
+}
+.sprite.sprite-pen {
+  background-position: -5px -596px;
+  width: 58px;
+  height: 58px;
+}
+.sprite.sprite-phone {
+  background-position: -5px -664px;
+  width: 44px;
+  height: 63px;
+}
+.sprite.sprite-phone-purple {
+  background-position: -5px -737px;
+  width: 44px;
+  height: 63px;
+}
+.sprite.sprite-photo {
+  background-position: -5px -810px;
+  width: 50px;
+  height: 53px;
+}
+.sprite.sprite-settings {
+  background-position: -5px -873px;
+  width: 57px;
+  height: 57px;
+}
+.sprite.sprite-side-arrow {
+  background-position: -5px -940px;
+  width: 16px;
+  height: 24px;
+}
+.sprite.sprite-side-arrow-purple {
+  background-position: -5px -974px;
+  width: 16px;
+  height: 24px;
+}
+.sprite.sprite-study {
+  background-position: -5px -1008px;
+  width: 69px;
+  height: 60px;
+}
+.sprite.sprite-user {
+  background-position: -5px -1078px;
+  width: 56px;
+  height: 56px;
+}

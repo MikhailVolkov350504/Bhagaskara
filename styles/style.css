@@ -18,44 +18,29 @@ html,
 body {
   height: 100%;
 }
-.bubble {
-  background: url("../resources/Icons/bubble.png");
-  width: 50px;
-  height: 50px;
-}
-.main-header-link {
-  /* непосещенная ссылка */
-  /* посещенная ссылка */
-  /* ссылка, над которой находится курсор мыши */
-}
-.main-header-link:link {
+.main-logo-link:link {
   text-decoration: none;
   color: white;
 }
-.main-header-link:visited {
+.main-logo-link:visited {
   text-decoration: none;
   color: white;
 }
-.main-header-link:hover {
+.main-logo-link:hover {
   text-decoration: none;
   color: white;
 }
-.header-link {
-  /* непосещенная ссылка */
-  /* посещенная ссылка */
-  /* ссылка, над которой находится курсор мыши */
-}
-.header-link:link {
+.nav-logo-link:link {
   text-decoration: none;
-  color: #666666;
+  color: #676767;
 }
-.header-link:visited {
+.nav-logo-link:visited {
   text-decoration: none;
-  color: #666666;
+  color: #676767;
 }
-.header-link:hover {
+.nav-logo-link:hover {
   text-decoration: none;
-  color: #666666;
+  color: #676767;
 }
 .logo {
   font-family: Lato-Thin;
@@ -63,27 +48,18 @@ body {
 .logo strong {
   color: #9f449b;
 }
-.hexagon {
-  fill: #ffffff;
-  fill-opacity: 0.10;
-  stroke: #ffffff;
-  stroke-width: 4.00px;
-}
 .header {
   text-align: center;
   height: 100%;
   background-image: url("../resources/Images/main.png");
   background-position: center;
+  font-family: Lato-Thin;
   color: white;
   padding: 50px;
   box-sizing: border-box;
 }
 .header .main-logo {
   font-size: 90px;
-}
-.header h2,
-.header p {
-  font-family: Lato-Thin;
 }
 .header h2 {
   font-size: 48px;
@@ -100,23 +76,6 @@ body {
 }
 .header .header-nav .header-nav-right {
   float: right;
-}
-.header .header-nav .header-nav-block .bubble {
-  fill: url("../resources/Icons/bubble.png");
-}
-.header .header-nav .header-nav-block .hexagon-caption {
-  fill: white;
-  font-family: Lato-Regular;
-  font-size: 20px;
-}
-.header .header-nav .header-nav-block a:hover .hexagon {
-  fill: #9f449b;
-  fill-opacity: 1;
-  stroke: #9f449b;
-  stroke-width: 4.00px;
-}
-.header .header-nav .header-nav-block a:hover .hexagon-caption {
-  fill: white;
 }
 .nav {
   font-family: Lato-Regular;
@@ -144,18 +103,13 @@ body {
 .nav .nav-list li:last-child {
   margin-right: 0;
 }
-.nav .nav-list li a {
-  /* непосещенная ссылка */
-  /* посещенная ссылка */
-  /* ссылка, над которой находится курсор мыши */
-}
 .nav .nav-list li a:link {
   text-decoration: none;
-  color: #666666;
+  color: #676767;
 }
 .nav .nav-list li a:visited {
   text-decoration: none;
-  color: #666666;
+  color: #676767;
 }
 .nav .nav-list li a:hover {
   text-decoration: none;
@@ -171,15 +125,33 @@ body {
 .main .benefits {
   height: 795px;
   background-color: #eeeeee;
+  position: relative;
 }
-.main .benefits a .benefit-hexagon {
-  fill-opacity: 0;
-  stroke: #ccd0d2;
-  stroke-width: 4.00px;
+.main .benefits .benefits-wrapper {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.main .benefits a:hover .benefit-hexagon {
-  stroke: #9f449b;
-  stroke-width: 4.00px;
+.main .benefits .benefits-wrapper .benefit {
+  display: inline-block;
+  width: 260px;
+  margin-right: 20px;
+  text-align: center;
+  color: #676767;
+  font-family: Lato-Thin;
+}
+.main .benefits .benefits-wrapper .benefit:last-child {
+  margin-right: 0;
+}
+.main .benefits .benefits-wrapper .benefit h2 {
+  font-size: 24px;
+}
+.main .benefits .benefits-wrapper .benefit p {
+  font-size: 18px;
 }
 @media (min-width: 2000px) {
   .header {

@@ -1,5 +1,5 @@
 @main-color: #9f449b;
-@header-color: #666666;
+@text-color: #676767;
 @background-color: #eeeeee;
 
 html,body,h1, ul, li { //reset css
@@ -16,69 +16,46 @@ html,body,h1, ul, li { //reset css
   src: local("Lato-Regular"),
   url("../resources/Fonts/Lato2OFL/Lato-Regular.ttf");
 }
-
 html, body {
   height: 100%;
 }
-.bubble {
-  background: url("../resources/Icons/bubble.png");
-  width: 50px;
-  height: 50px;
+.link-decoration(@_link-color, @_visited-color) {
+  &:link {
+    text-decoration:none;
+    color: @_link-color;
+    }
+  &:visited {
+    text-decoration:none;
+    color: @_link-color;
+    }
+  &:hover {
+    text-decoration:none;
+    color: @_visited-color;
+    }
 }
-  .main-header-link {
-    &:link {
-      text-decoration:none;
-      color: white;
-      } /* непосещенная ссылка */
-    &:visited {
-      text-decoration:none;
-      color: white;
-      } /* посещенная ссылка */
-    &:hover {
-      text-decoration:none;
-      color: white;
-      } /* ссылка, над которой находится курсор мыши */
-  }
-  .header-link {
-    &:link {
-      text-decoration:none;
-      color: @header-color;
-      } /* непосещенная ссылка */
-    &:visited {
-      text-decoration:none;
-      color: @header-color;
-      } /* посещенная ссылка */
-    &:hover {
-      text-decoration:none;
-      color: @header-color;
-      } /* ссылка, над которой находится курсор мыши */
-  }
-  .logo {
-    font-family: Lato-Thin;
-      strong {
-        color: @main-color;
-      }
-  }
-
-  .hexagon {
-    fill: rgb(255,255,255);
-    fill-opacity: 0.10;
-    stroke: rgb(255,255,255);
-    stroke-width: 4.00px;
-  }
-  .header {
+.main-logo-link {
+  .link-decoration(white, white);
+}
+.nav-logo-link {
+  .link-decoration(@text-color, @text-color);
+}
+.logo {
+  font-family: Lato-Thin;
+    strong {
+      color: @main-color;
+    }
+}
+.header {
   text-align: center;
   height: 100%;
   background-image: url("../resources/Images/main.png");
   background-position: center;
+  font-family: Lato-Thin;
   color: white;
   padding: 50px;
   box-sizing: border-box;
     .main-logo {
       font-size: 90px;
-    }
-    h2,p {
-      font-family: Lato-Thin;
     }
     h2 {
       font-size: 48px;
@@ -94,26 +71,6 @@ html, body {
       }
       .header-nav-right {
         float: right;
-      }
-      .header-nav-block {
-        .bubble {
-          fill: url("../resources/Icons/bubble.png");
-        }
-        .hexagon-caption {
-          fill: white;
-          font-family: Lato-Regular;
-          font-size: 20px;
-        }
-        a:hover .hexagon {
-          fill: @main-color;
-          fill-opacity: 1;
-          stroke: @main-color;
-          stroke-width: 4.00px;
-        }
-        a:hover .hexagon-caption {
-          fill: white;
-        }
-
       }
     }
 }
@@ -131,10 +88,8 @@ html, body {
   .nav-list {
     display: inline-block;
     list-style-type: none;
-
     float: right;
     vertical-align: middle;
-
     li {
       font-size: 15px;
       display: inline-block;
@@ -143,18 +98,7 @@ html, body {
         margin-right: 0;
       }
       a {
-        &:link {
-          text-decoration:none;
-          color: @header-color;
-          } /* непосещенная ссылка */
-        &:visited {
-          text-decoration:none;
-          color: @header-color;
-          } /* посещенная ссылка */
-        &:hover {
-          text-decoration:none;
-          color: @main-color;
-          } /* ссылка, над которой находится курсор мыши */
+        .link-decoration(@text-color, @main-color);
       }
     }
   }
@@ -164,24 +108,37 @@ html, body {
     height: 0;
     clear: both;
     visibility: hidden;
-}
+  }
 }
 .main {
   .benefits {
     height: 795px;
     background-color: @background-color;
-    a {
-      .benefit-hexagon {
-        // fill: rgb(255,255,255);
-        fill-opacity: 0;
-        stroke: #ccd0d2;;
-        stroke-width: 4.00px;
-      }
-      &:hover .benefit-hexagon {
-        // fill: @main-color;
-        // fill-opacity: 1;
-        stroke: @main-color;
-        stroke-width: 4.00px;
+    position: relative;
+    .benefits-wrapper {
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      .benefit {
+        display: inline-block;
+        width: 260px;
+        margin-right: 20px;
+        text-align: center;
+        color: @text-color;
+        font-family: Lato-Thin;
+        &:last-child {
+          margin-right: 0;
+        }
+        h2 {
+          font-size: 24px;
+        }
+        p {
+          font-size: 18px;
+        }
       }
     }
   }
