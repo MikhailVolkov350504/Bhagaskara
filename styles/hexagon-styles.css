@@ -5,17 +5,15 @@
 .hexagon-wrapper .hexagon {
   stroke-width: 4.00px;
 }
-.hexagon-wrapper a:hover .hexagon {
-  stroke: #9f449b;
-}
 .header .header-hexagon {
   fill: #ffffff;
-  fill-opacity: 0.10;
+  fill-opacity: 0.1;
   stroke: #ffffff;
 }
 .header a:hover .header-hexagon {
   fill: #9f449b;
   fill-opacity: 1;
+  stroke: #9f449b;
 }
 .header a:hover .hexagon-caption {
   fill: white;
@@ -29,19 +27,22 @@
   margin-right: 25px;
 }
 .benefits .benefit-hexagon {
+  fill: #ffffff;
   fill-opacity: 0;
   stroke: #ccd0d2;
+}
+.benefits a:hover .benefit-hexagon {
+  fill: #ffffff;
+  fill-opacity: 0;
+  stroke: #9f449b;
+}
+.section-hexagon {
+  fill: #ffffff;
+  fill-opacity: 0.1;
+  stroke: #ffffff;
 }
 .scroller {
   display: block;
   width: 85px;
   margin: auto;
-}
-.bubble {
-  background: url("../resources/Icons/bubble.png");
-  width: 60px;
-  height: 53px;
-  position: absolute;
-  left: 55px;
-  top: 45px;
 }

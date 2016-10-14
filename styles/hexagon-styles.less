@@ -2,26 +2,27 @@
 @text-color: #676767;
 @background-color: #eeeeee;
 
+.hexagon-style(@_fill, @_fill-opacity, @_stroke) {
+  fill: @_fill;
+  fill-opacity: @_fill-opacity;
+  stroke: @_stroke;
+}
+
 .hexagon-wrapper {
   position: relative;
   display: inline-block;
   .hexagon {
     stroke-width: 4.00px;
   }
-  a:hover .hexagon {
-    stroke: @main-color;
-  }
 }
 .header {
   .header-hexagon {
-    fill: rgb(255,255,255);
-    fill-opacity: 0.10;
-    stroke: rgb(255,255,255);
+    .hexagon-style(#ffffff, 0.10, #ffffff);
   }
   a:hover .header-hexagon {
-    fill: @main-color;
-    fill-opacity: 1;
+    .hexagon-style(@main-color, 1, @main-color);
   }
+
   a:hover .hexagon-caption {
     fill: white;
   }
@@ -39,23 +40,19 @@
   }
 }
 
-
 .benefits {
   .benefit-hexagon {
-    fill-opacity: 0;
-    stroke: #ccd0d2;
+    .hexagon-style(#ffffff, 0, #ccd0d2);
   }
+  a:hover .benefit-hexagon {
+    .hexagon-style(#ffffff, 0, @main-color);
+  }
+}
+.section-hexagon {
+  .hexagon-style(#ffffff, 0.10, #ffffff);
 }
 .scroller {
   display: block;
   width: 85px;
   margin: auto;
 }
-// .bubble {
-//   background: url("../resources/Icons/bubble.png");
-//   width: 60px;
-//   height: 53px;
-//   position: absolute;
-//   left: 55px;
-//   top: 45px;
-// }

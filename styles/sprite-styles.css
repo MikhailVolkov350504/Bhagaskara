@@ -6,6 +6,11 @@
   left: 55px;
   top: 45px;
 }
+.sprite.center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .sprite.sprite-bubble {
   background-position: -5px -5px;
   width: 61px;
@@ -16,18 +21,8 @@
   width: 54px;
   height: 61px;
 }
-.sprite.sprite-cup-purple {
-  background-position: -5px -140px;
-  width: 54px;
-  height: 61px;
-}
 .sprite.sprite-diamond {
   background-position: -5px -211px;
-  width: 83px;
-  height: 63px;
-}
-.sprite.sprite-diamond-purple {
-  background-position: -5px -284px;
   width: 83px;
   height: 63px;
 }
@@ -38,11 +33,6 @@
 }
 .sprite.sprite-heart {
   background-position: -5px -384px;
-  width: 71px;
-  height: 62px;
-}
-.sprite.sprite-heart-purple {
-  background-position: -5px -456px;
   width: 71px;
   height: 62px;
 }
@@ -58,11 +48,6 @@
 }
 .sprite.sprite-phone {
   background-position: -5px -664px;
-  width: 44px;
-  height: 63px;
-}
-.sprite.sprite-phone-purple {
-  background-position: -5px -737px;
   width: 44px;
   height: 63px;
 }
@@ -95,4 +80,24 @@
   background-position: -5px -1078px;
   width: 56px;
   height: 56px;
+}
+.hexagon-wrapper:hover .sprite.sprite-cup {
+  background-position: -5px -140px;
+  width: 54px;
+  height: 61px;
+}
+.hexagon-wrapper:hover .sprite.sprite-diamond {
+  background-position: -5px -284px;
+  width: 83px;
+  height: 63px;
+}
+.hexagon-wrapper:hover .sprite.sprite-heart {
+  background-position: -5px -456px;
+  width: 71px;
+  height: 62px;
+}
+.hexagon-wrapper:hover .sprite.sprite-phone {
+  background-position: -5px -737px;
+  width: 44px;
+  height: 63px;
 }
