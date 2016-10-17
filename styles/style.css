@@ -224,14 +224,151 @@ body {
   background: url("../resources/Images/section.png");
   background-position: center;
   height: 624px;
+  font-family: Lato-Thin;
+  font-size: 25px;
+  color: white;
+  position: relative;
+}
+.main .quote .hexagon-wrapper {
+  margin-bottom: 35px;
+}
+.main .quote .center-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.team .slider-controllers {
+  margin-bottom: 50px;
+}
+.team .slider-controllers .hexagon-wrapper:last-child {
+  transform: scaleX(-1);
+}
+.team .team-member {
+  display: inline-block;
+  color: #484848;
+  font-family: Lato-Thin;
+  margin-right: 80px;
+}
+.team .team-member:last-child {
+  margin-right: 0;
+}
+.team .team-member .team-member-img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+.team .team-member .team-member-name {
+  font-size: 20px;
+  font-family: Lato-Regular;
+}
+.team .team-member .team-member-position {
+  font-size: 14px;
+}
+.team .team-member .social-link {
+  width: 40px;
+  height: 40px;
+}
+.social-link {
+  display: inline-block;
+  font-size: 23px;
+  border: 1px solid #484848;
+  border-radius: 50%;
+  position: relative;
+  font-family: Lato-Regular;
+}
+.social-link:link {
+  text-decoration: none;
+  color: #484848;
+}
+.social-link:visited {
+  text-decoration: none;
+  color: #484848;
+}
+.social-link:hover {
+  text-decoration: none;
+  color: white;
+}
+.social-link:hover {
+  background-color: #9f449b;
+  border-color: #9f449b;
+}
+.social-link span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.skills .charts-wrapper {
+  width: 1140px;
+  margin: 100px auto;
+}
+.skills .charts-wrapper:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.skills .chart {
+  display: inline-block;
+  width: 418px;
+  color: #484848;
+}
+.skills .chart:nth-child(2n+1) {
+  float: left;
+}
+.skills .chart:nth-child(2n) {
+  float: right;
+}
+.skills .chart:nth-child(1),
+.skills .chart:nth-child(2) {
+  margin-bottom: 40px;
+}
+.skills .chart .chart-name {
+  font-family: Lato-Regular;
+  float: left;
+  margin: 0;
+  font-size: 18px;
+}
+.skills .chart .chart-percentage {
+  font-family: Lato-Thin;
+  float: right;
+  font-size: 20px;
+}
+.skills .chart .chart-base {
+  background-color: #f0f0f0;
+  height: 20px;
+}
+.skills .chart .chart-level {
+  height: 100%;
+  background-color: #9f449b;
+}
+.skills .chart #web-design-level {
+  width: 90%;
+}
+.skills .chart #graphic-design-level {
+  width: 70%;
+}
+.skills .chart #html-css-level {
+  width: 75%;
+}
+.skills .chart #ui-ux-level {
+  width: 85%;
+}
+.skills .chart .chart-header:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+@media (min-width: 1500px) {
+  background-size: 100%;
 }
 @media (min-width: 2000px) {
   .header {
-    background-size: 100%;
-  }
-}
-@media (min-width: 1500px) {
-  .quote {
     background-size: 100%;
   }
 }

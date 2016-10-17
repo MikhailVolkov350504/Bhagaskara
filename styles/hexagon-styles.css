@@ -46,3 +46,13 @@
   width: 85px;
   margin: auto;
 }
+.slider-controllers .slider-controller-hexagon {
+  fill: #ffffff;
+  fill-opacity: 0;
+  stroke: #9f449b;
+}
+.slider-controllers a:hover .slider-controller-hexagon {
+  fill: #9f449b;
+  fill-opacity: 1;
+  stroke: #9f449b;
+}

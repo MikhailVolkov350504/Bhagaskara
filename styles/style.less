@@ -20,7 +20,7 @@ html,body,h1, ul, li { //reset css
 html, body {
   height: 100%;
 }
-.link-decoration(@_link-color, @_visited-color) {
+.link-decoration(@_link-color, @_visited-color, @_hover-color) {
   &:link {
     text-decoration:none;
     color: @_link-color;
@@ -31,14 +31,14 @@ html, body {
     }
   &:hover {
     text-decoration:none;
-    color: @_visited-color;
+    color: @_hover-color;
     }
 }
 .main-header-title-link {
-  .link-decoration(white, white);
+  .link-decoration(white, white, white);
 }
 .header-title-link {
-  .link-decoration(@text-color, @text-color);
+  .link-decoration(@text-color, @text-color, @text-color);
 }
 .header-title {
   font-family: Lato-Thin;
@@ -99,7 +99,7 @@ html, body {
         margin-right: 0;
       }
       a {
-        .link-decoration(@text-color, @main-color);
+        .link-decoration(@text-color, @text-color, @main-color);
       }
     }
   }
@@ -126,7 +126,7 @@ html, body {
     height: 72px;
     display: inline-block;
     position: relative;
-    .link-decoration(white, white);
+    .link-decoration(white, white, white);
     font-size: 18px;
     font-family: Lato-Regular;
     border-radius: 6px;
@@ -203,15 +203,145 @@ html, body {
     background: url("../resources/Images/section.png");
     background-position: center;
     height: 624px;
+    font-family: Lato-Thin;
+    font-size: 25px;
+    color: white;
+    position: relative;
+    .hexagon-wrapper {
+      margin-bottom: 35px;
+    }
+    .center-wrapper {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
+}
+.team {
+  .slider-controllers {
+    margin-bottom: 50px;
+    .hexagon-wrapper:last-child {
+      transform:scaleX(-1);
+    }
+  }
+  .team-member {
+    display: inline-block;
+    color: #484848;
+    font-family: Lato-Thin;
+    margin-right: 80px;
+    &:last-child {
+      margin-right: 0;
+    }
+    .team-member-img {
+      border-radius: 50%;
+      width: 200px;
+	    height: 200px;
+      margin-bottom: 20px;
+    }
+    .team-member-name {
+      font-size: 20px;
+      font-family: Lato-Regular;
+    }
+    .team-member-position {
+      font-size: 14px;
+    }
+    .social-link {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+.social-link {
+  display: inline-block;
+  .link-decoration(#484848,#484848, white);
+  font-size: 23px;
+  border: 1px solid #484848;
+  border-radius: 50%;
+  position: relative;
+  font-family: Lato-Regular;
+  &:hover {
+    background-color: @main-color;
+    border-color: @main-color;
+  }
+  span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+.skills {
+  .charts-wrapper {
+    width: 1140px;
+    margin: 100px auto;
+    &:after {
+      content: ".";
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden;
+    }
+  }
+  .chart {
+    display: inline-block;
+    width: 418px;
+    color: #484848;
+    &:nth-child(2n+1) {
+      float: left;
+    }
+    &:nth-child(2n) {
+      float: right;
+    }
+    &:nth-child(1), &:nth-child(2) {
+      margin-bottom: 40px;
+    }
+    .chart-name {
+      font-family: Lato-Regular;
+      float: left;
+      margin: 0;
+      font-size: 18px;
+    }
+    .chart-percentage {
+      font-family: Lato-Thin;
+      float: right;
+      font-size: 20px;
+    }
+    .chart-base {
+      background-color: #f0f0f0;
+      height: 20px;
+    }
+    .chart-level {
+      height: 100%;
+      background-color: @main-color;
+    }
+    #web-design-level {
+      width: 90%;
+    }
+    #graphic-design-level {
+      width: 70%;
+    }
+    #html-css-level {
+      width: 75%;
+    }
+    #ui-ux-level {
+      width: 85%;
+    }
+    .chart-header:after {
+      content: ".";
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden;
+    }
+  }
+}
+@media (min-width: 1500px) {
+  background-size: 100%;
 }
 @media (min-width: 2000px) {
   .header {
     background-size: 100%;
   }
-}
-@media (min-width: 1500px) {
-  .quote {
-    background-size: 100%;
-  }
+
 }
