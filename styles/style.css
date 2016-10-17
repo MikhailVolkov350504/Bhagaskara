@@ -42,6 +42,19 @@ body {
   text-decoration: none;
   color: #676767;
 }
+.center-position {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.clear-fix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
 .header-title {
   font-family: Lato-Thin;
 }
@@ -53,18 +66,23 @@ body {
   height: 100%;
   background-image: url("../resources/Images/main.png");
   background-position: center;
-  font-family: Lato-Thin;
-  color: white;
   padding: 50px;
   box-sizing: border-box;
+  background-size: cover;
 }
 .header .main-logo {
+  font-family: Lato-Thin;
+  color: white;
   font-size: 90px;
 }
 .header h2 {
+  font-family: Lato-Thin;
+  color: white;
   font-size: 48px;
 }
 .header p {
+  font-family: Lato-Thin;
+  color: white;
   font-size: 34px;
 }
 .header .header-nav {
@@ -79,6 +97,7 @@ body {
 }
 .nav {
   font-family: Lato-Regular;
+  color: white;
   font-size: 20px;
   width: 60%;
   line-height: 143px;
@@ -138,8 +157,9 @@ body {
   height: 72px;
   display: inline-block;
   position: relative;
-  font-size: 18px;
   font-family: Lato-Regular;
+  color: white;
+  font-size: 18px;
   border-radius: 6px;
   border-bottom: 4px solid #6b2e68;
 }
@@ -181,18 +201,20 @@ body {
 .main .benefits .benefits-wrapper .benefit {
   display: inline-block;
   width: 260px;
-  margin-right: 20px;
   text-align: center;
-  color: #676767;
-  font-family: Lato-Thin;
+  margin-right: 20px;
 }
 .main .benefits .benefits-wrapper .benefit:last-child {
   margin-right: 0;
 }
 .main .benefits .benefits-wrapper .benefit h2 {
+  font-family: Lato-Thin;
+  color: #676767;
   font-size: 24px;
 }
 .main .benefits .benefits-wrapper .benefit p {
+  font-family: Lato-Thin;
+  color: #676767;
   font-size: 18px;
 }
 .main .about .about-content {
@@ -211,8 +233,8 @@ body {
   box-sizing: border-box;
 }
 .main .about .about-content .about-text p {
-  color: #676767;
   font-family: Lato-Thin;
+  color: #676767;
   font-size: 20px;
 }
 .main .about .about-content .about-text .learn-more-link {
@@ -224,9 +246,10 @@ body {
   background: url("../resources/Images/section.png");
   background-position: center;
   height: 624px;
+  background-size: cover;
   font-family: Lato-Thin;
-  font-size: 25px;
   color: white;
+  font-size: 25px;
   position: relative;
 }
 .main .quote .hexagon-wrapper {
@@ -246,29 +269,32 @@ body {
 }
 .team .team-member {
   display: inline-block;
-  color: #484848;
-  font-family: Lato-Thin;
   margin-right: 80px;
 }
 .team .team-member:last-child {
   margin-right: 0;
 }
-.team .team-member .team-member-img {
-  border-radius: 50%;
+.team .team-member .round-img {
   width: 200px;
   height: 200px;
-  margin-bottom: 20px;
 }
 .team .team-member .team-member-name {
-  font-size: 20px;
   font-family: Lato-Regular;
+  color: #484848;
+  font-size: 20px;
 }
 .team .team-member .team-member-position {
+  font-family: Lato-Thin;
+  color: #484848;
   font-size: 14px;
 }
 .team .team-member .social-link {
   width: 40px;
   height: 40px;
+}
+.round-img {
+  border-radius: 50%;
+  margin-bottom: 20px;
 }
 .social-link {
   display: inline-block;
@@ -314,7 +340,6 @@ body {
 .skills .chart {
   display: inline-block;
   width: 418px;
-  color: #484848;
 }
 .skills .chart:nth-child(2n+1) {
   float: left;
@@ -327,14 +352,16 @@ body {
   margin-bottom: 40px;
 }
 .skills .chart .chart-name {
-  font-family: Lato-Regular;
   float: left;
   margin: 0;
+  font-family: Lato-Regular;
+  color: #484848;
   font-size: 18px;
 }
 .skills .chart .chart-percentage {
-  font-family: Lato-Thin;
   float: right;
+  font-family: Lato-Thin;
+  color: #484848;
   font-size: 20px;
 }
 .skills .chart .chart-base {
@@ -364,11 +391,22 @@ body {
   clear: both;
   visibility: hidden;
 }
-@media (min-width: 1500px) {
-  background-size: 100%;
+.services .service-value {
+  display: inline-block;
+  width: 150px;
+  text-align: center;
+  margin-right: 25px;
 }
-@media (min-width: 2000px) {
-  .header {
-    background-size: 100%;
-  }
+.services .service-value:last-child {
+  margin-right: 0;
+}
+.services .service-value .value {
+  font-family: Lato-Thin;
+  color: black;
+  font-size: 55px;
+}
+.services .service-value .caption {
+  font-family: Lato-Thin;
+  color: #484848;
+  font-size: 15px;
 }
