@@ -326,6 +326,10 @@ html, body {
   }
 }
 .services {
+  background-color: @background-color;
+  .services-values {
+    margin-bottom: 80px;
+  }
   .service-value {
     display: inline-block;
     width: 150px;
@@ -337,5 +341,18 @@ html, body {
     .caption {
       .font-style(Lato-Thin, #484848, 15px);
     }
+  }
+  .service-img {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  q {
+    .font-style(Lato-Thin, #484848, 26px);
+  }
+  p {
+    .font-style(Lato-Thin, #484848, 20px);
   }
 }
