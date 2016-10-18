@@ -7,8 +7,25 @@
     <link rel="stylesheet" href="styles/style.css" media="screen" title="no title">
     <link rel="stylesheet" href="styles/hexagon-styles.css" media="screen" title="no title">
     <link rel="stylesheet" href="styles/sprite-styles.css" media="screen" title="no title">
+    <link rel="stylesheet" href="styles/mediaqueries.css" media="screen" title="no title">
+    <link rel="stylesheet" href="styles/hidden_menu.css" media="screen" title="no title">
   </head>
   <body>
+    <input type="checkbox" id="hmc" class="hidden-menu-checkbox">
+    <label class="menu-button" for="hmc">
+      <span class="first"></span>
+      <span class="second"></span>
+      <span class="third"></span>
+    </label>
+    <ul class="hidden-menu">
+      <li><a class="scrollto" href="#home-section">HOME</a></li>
+      <li><a class="scrollto" href="#about-section">ABOUT</a></li>
+      <li><a class="scrollto" href="#team-section">TEAM</a></li>
+      <li><a class="scrollto" href="#services-section">SERVICES</a></li>
+      <li><a class="scrollto" href="#portfolio-section">PORTFOLIO</a></li>
+      <li><a class="scrollto" href="#">BLOG</a></li>
+      <li><a class="scrollto" href="#contact-section">CONTACT</a></li>
+    </ul>
     <header class="header" id="home-section">
       <a class="main-header-title-link" href="#home-section">
         <h1 class="header-title main-logo">Bhagas<strong>kara</strong>.</h1>
@@ -339,7 +356,7 @@
             <span class="caption">lorem ipsum</span>
           </article>
           <article class="service-value">
-            <span class="value">1,642</span>
+            <span class="value">1,642<br></span>
             <span class="caption">lorem ipsum</span>
           </article>
         </div>
@@ -350,12 +367,12 @@
         </q>
         <p>LESALE CHHRISTPER, PINTEREST</p>
       </section>
-      <section class="portfolio" id="portfolio-section">
+      <!-- <section class="portfolio" id="portfolio-section">
 
       </section>
       <section class="contact" id="contact-section">
 
-      </section>
+      </section> -->
     </main>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
     <script src="JS/index.js"></script>
