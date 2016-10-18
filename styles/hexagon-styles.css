@@ -5,25 +5,25 @@
 .hexagon-wrapper .hexagon {
   stroke-width: 4.00px;
 }
-.header .header-hexagon {
+.header-hexagon {
   fill: #ffffff;
   fill-opacity: 0.1;
   stroke: #ffffff;
 }
-.header a:hover .header-hexagon {
+a:hover .header-hexagon {
   fill: #9f449b;
   fill-opacity: 1;
   stroke: #9f449b;
 }
-.header a:hover .hexagon-caption {
+a:hover .hexagon-caption {
   fill: white;
 }
-.header .header-nav-block .hexagon-wrapper .hexagon-caption {
+.header-nav-block .hexagon-wrapper .hexagon-caption {
   fill: white;
   font-family: Lato-Regular;
   font-size: 20px;
 }
-.header .header-nav-block .hexagon-wrapper:first-child {
+.header-nav-block .hexagon-wrapper:first-child {
   margin-right: 25px;
 }
 .benefits .benefit-hexagon {
