@@ -74,6 +74,9 @@
   body .menu-button {
     display: inline;
   }
+  body .hidden-menu {
+    display: block;
+  }
   .main .benefits {
     height: auto;
   }
@@ -175,12 +178,6 @@
   }
   .header .main-logo {
     font-size: 48px;
-  }
-  .header .motto h2 {
-    font-size: 20px;
-  }
-  .header .motto p {
-    font-size: 13px;
   }
   .main .header-title {
     font-size: 40px;
