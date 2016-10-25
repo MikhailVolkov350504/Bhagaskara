@@ -10,6 +10,9 @@ html,body,h1, ul, li { //reset css
   margin: 0;
   padding: 0;
 }
+html {
+    font-size: 10px;
+  }
 @font-face {
   font-family: Existence;
   src: local("Existence-Light"),
@@ -104,13 +107,13 @@ html, body {
   box-sizing: border-box;
   background-size: cover;
     .main-logo {
-      .font-style(Existence, white, 90px);
+      .font-style(Existence, white, 9.0rem);
     }
     h2 {
-      .font-style(Lato-Thin, white, 48px);
+      .font-style(Lato-Thin, white, 4.8rem);
     }
     p {
-      .font-style(Lato-Thin, white, 34px);
+      .font-style(Lato-Thin, white, 3.4rem);
     }
 }
 .header-nav {
@@ -124,7 +127,7 @@ html, body {
   float: right;
 }
 .nav {
-  .font-style(Lato-Regular, white, 20px);
+  .font-style(Lato-Regular, white, 2.0rem);
   width: 60%;
   line-height: 143px;
   margin: auto;
@@ -139,7 +142,7 @@ html, body {
     float: right;
     vertical-align: middle;
     li {
-      font-size: 15px;
+      font-size: 1.5rem;
       display: inline-block;
       .margin-between-elements(25px);
       a {
@@ -158,7 +161,7 @@ html, body {
     display: block;
   }
   .section-title {
-    font-size: 55px;
+    font-size: 5.5rem;
     margin-bottom: 70px;
     position: relative;
     display: inline-block;
@@ -191,7 +194,7 @@ html, body {
     display: inline-block;
     position: relative;
     .link-decoration(white, white, white);
-    .font-style(Lato-Regular, white, 18px);
+    .font-style(Lato-Regular, white, 1.8rem);
     border-radius: 6px;
     border-bottom: 4px solid @main-dark-color;
     &:hover {
@@ -216,10 +219,10 @@ html, body {
         text-align: center;
         .margin-between-elements(20px);
         h2 {
-          .font-style(Lato-Thin, @text-color, 24px);
+          .font-style(Lato-Thin, @text-color, 2.4rem);
         }
         p {
-          .font-style(Lato-Thin, @text-color, 18px);
+          .font-style(Lato-Thin, @text-color, 1.8rem);
         }
       }
     }
@@ -246,7 +249,7 @@ html, body {
       min-height: 410px;
       box-sizing: border-box;
       p {
-        .font-style(Lato-Thin, @text-color, 20px);
+        .font-style(Lato-Thin, @text-color, 2.0rem);
       }
     }
   }
@@ -255,7 +258,7 @@ html, body {
     background-position: center;
     height: 624px;
     background-size: cover;
-    .font-style(Lato-Thin, white, 25px);
+    .font-style(Lato-Thin, white, 2.5rem);
     position: relative;
     .hexagon-wrapper {
       margin-bottom: 35px;
@@ -280,10 +283,10 @@ html, body {
       height: 200px;
     }
     .team-member-name {
-      .font-style(Lato-Regular, @names-color, 20px);
+      .font-style(Lato-Regular, @names-color, 2.0rem);
     }
     .team-member-position {
-      .font-style(Lato-Thin, @names-color, 14px);
+      .font-style(Lato-Thin, @names-color, 1.4rem);
     }
     .social-link {
       width: 40px;
@@ -298,7 +301,7 @@ html, body {
 .social-link {
   display: inline-block;
   .link-decoration(@names-color,@names-color, white);
-  font-size: 23px;
+  font-size: 2.3rem;
   border: 1px solid @names-color;
   border-radius: 50%;
   position: relative;
@@ -332,11 +335,11 @@ html, body {
     .chart-name {
       float: left;
       margin: 0;
-      .font-style(Lato-Regular, @names-color, 18px);
+      .font-style(Lato-Regular, @names-color, 1.8rem);
     }
     .chart-percentage {
       float: right;
-      .font-style(Lato-Thin, @names-color, 20px);
+      .font-style(Lato-Thin, @names-color, 2.0rem);
     }
     .chart-base {
       background-color: @chart-base-color;
@@ -374,10 +377,10 @@ html, body {
     text-align: center;
     .margin-between-elements(25px);
     .value {
-      .font-style("Helvetica-Neue", black, 55px);
+      .font-style("Helvetica-Neue", black, 5.5rem);
     }
     .caption {
-      .font-style("Helvetica-Neue", @names-color, 15px);
+      .font-style("Helvetica-Neue", @names-color, 1.5rem);
     }
   }
   .service-img {
@@ -388,10 +391,10 @@ html, body {
     margin-right: auto;
   }
   q {
-    .font-style("Helvetica-Neue", @names-color, 26px);
+    .font-style("Helvetica-Neue", @names-color, 2.6rem);
   }
   p {
-    .font-style("Helvetica-Neue", @names-color, 20px);
+    .font-style("Helvetica-Neue", @names-color, 2.0rem);
   }
 }
 .portfolio {
@@ -408,7 +411,7 @@ html, body {
     width: 60px;
     padding: 4px 2px;
     .link-decoration(black, black, white);
-    .font-style(Lato-Regular, black, 17px);
+    .font-style(Lato-Regular, black, 1.7rem);
     border: 1px solid black;
     border-radius: 4px;
     &:hover {
@@ -447,11 +450,11 @@ html, body {
     }
     .thumbnail-figcaption {
       margin: 0;
-      .font-style(Lato-Regular, black, 20px);
+      .font-style(Lato-Regular, black, 2.0rem);
     }
     .thumbnail-figure-category {
       margin: 0;
-      .font-style(Lato-Regular, @thumbnail-category-color, 15px);
+      .font-style(Lato-Regular, @thumbnail-category-color, 1.5rem);
     }
   }
 }
@@ -469,7 +472,7 @@ html, body {
     width: 100%;
     padding: 10px;
     border: 1px solid @text-color;
-    font-size: 20px;
+    font-size: 2.0rem;
     margin-bottom: 15px;
     box-sizing: border-box;
     &[placeholder] {
@@ -488,24 +491,23 @@ html, body {
     font-style: normal;
     .general-information {
       margin-top: 0;
-      .font-style(Arial, @text-color, 20px);
+      .font-style(Arial, @text-color, 2.0rem);
     }
     .location {
       font-weight: bold;
-      .font-style(Arial, black, 20px);
+      .font-style(Arial, black, 2.0rem);
     }
     .phone-numbers-list {
       font-weight: bold;
-      .font-style(Arial, black , 20px);
-      dt,dd {
-        display: inline-block;
-        margin: 0;
+      .font-style(Arial, black , 2.0rem);
+      dt {
+        float: left;
       }
     }
     .social-link {
       width: 50px;
       height: 50px;
-      font-size: 30px;
+      font-size: 3.0rem;
     }
   }
 }
@@ -517,6 +519,6 @@ html, body {
   }
   .header-title {
     display: inline-block;
-    .font-style(Existence, @text-color, 50px);
+    .font-style(Existence, @text-color, 5.0rem);
   }
 }

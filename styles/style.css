@@ -6,6 +6,9 @@ li {
   margin: 0;
   padding: 0;
 }
+html {
+  font-size: 10px;
+}
 @font-face {
   font-family: Existence;
   src: local("Existence-Light"), url("../resources/Fonts/Existence-Light.otf");
@@ -92,17 +95,17 @@ body {
 .header .main-logo {
   font-family: Existence, Arial, Helvetica, sans-serif;
   color: white;
-  font-size: 90px;
+  font-size: 9rem;
 }
 .header h2 {
   font-family: Lato-Thin, Arial, Helvetica, sans-serif;
   color: white;
-  font-size: 48px;
+  font-size: 4.8rem;
 }
 .header p {
   font-family: Lato-Thin, Arial, Helvetica, sans-serif;
   color: white;
-  font-size: 34px;
+  font-size: 3.4rem;
 }
 .header-nav {
   width: 60%;
@@ -117,7 +120,7 @@ body {
 .nav {
   font-family: Lato-Regular, Arial, Helvetica, sans-serif;
   color: white;
-  font-size: 20px;
+  font-size: 2rem;
   width: 60%;
   line-height: 143px;
   margin: auto;
@@ -134,7 +137,7 @@ body {
   vertical-align: middle;
 }
 .nav .nav-list li {
-  font-size: 15px;
+  font-size: 1.5rem;
   display: inline-block;
   margin-right: 25px;
 }
@@ -170,7 +173,7 @@ body {
   display: block;
 }
 .main .section-title {
-  font-size: 55px;
+  font-size: 5.5rem;
   margin-bottom: 70px;
   position: relative;
   display: inline-block;
@@ -204,7 +207,7 @@ body {
   position: relative;
   font-family: Lato-Regular, Arial, Helvetica, sans-serif;
   color: white;
-  font-size: 18px;
+  font-size: 1.8rem;
   border-radius: 6px;
   border-bottom: 4px solid #6b2e68;
 }
@@ -255,12 +258,12 @@ body {
 .main .benefits .benefits-wrapper .benefit h2 {
   font-family: Lato-Thin, Arial, Helvetica, sans-serif;
   color: #676767;
-  font-size: 24px;
+  font-size: 2.4rem;
 }
 .main .benefits .benefits-wrapper .benefit p {
   font-family: Lato-Thin, Arial, Helvetica, sans-serif;
   color: #676767;
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 .main .about .about-content {
   display: inline-block;
@@ -285,7 +288,7 @@ body {
 .main .about .about-text p {
   font-family: Lato-Thin, Arial, Helvetica, sans-serif;
   color: #676767;
-  font-size: 20px;
+  font-size: 2rem;
 }
 .main .quote {
   background: url("../resources/Images/section.png");
@@ -294,7 +297,7 @@ body {
   background-size: cover;
   font-family: Lato-Thin, Arial, Helvetica, sans-serif;
   color: white;
-  font-size: 25px;
+  font-size: 2.5rem;
   position: relative;
 }
 .main .quote .hexagon-wrapper {
@@ -326,12 +329,12 @@ body {
 .team .team-member .team-member-name {
   font-family: Lato-Regular, Arial, Helvetica, sans-serif;
   color: #484848;
-  font-size: 20px;
+  font-size: 2rem;
 }
 .team .team-member .team-member-position {
   font-family: Lato-Thin, Arial, Helvetica, sans-serif;
   color: #484848;
-  font-size: 14px;
+  font-size: 1.4rem;
 }
 .team .team-member .social-link {
   width: 40px;
@@ -343,7 +346,7 @@ body {
 }
 .social-link {
   display: inline-block;
-  font-size: 23px;
+  font-size: 2.3rem;
   border: 1px solid #484848;
   border-radius: 50%;
   position: relative;
@@ -401,13 +404,13 @@ body {
   margin: 0;
   font-family: Lato-Regular, Arial, Helvetica, sans-serif;
   color: #484848;
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 .skills .chart .chart-percentage {
   float: right;
   font-family: Lato-Thin, Arial, Helvetica, sans-serif;
   color: #484848;
-  font-size: 20px;
+  font-size: 2rem;
 }
 .skills .chart .chart-base {
   background-color: #f0f0f0;
@@ -454,12 +457,12 @@ body {
 .services .service-value .value {
   font-family: "Helvetica-Neue", Arial, Helvetica, sans-serif;
   color: black;
-  font-size: 55px;
+  font-size: 5.5rem;
 }
 .services .service-value .caption {
   font-family: "Helvetica-Neue", Arial, Helvetica, sans-serif;
   color: #484848;
-  font-size: 15px;
+  font-size: 1.5rem;
 }
 .services .service-img {
   width: 150px;
@@ -471,12 +474,12 @@ body {
 .services q {
   font-family: "Helvetica-Neue", Arial, Helvetica, sans-serif;
   color: #484848;
-  font-size: 26px;
+  font-size: 2.6rem;
 }
 .services p {
   font-family: "Helvetica-Neue", Arial, Helvetica, sans-serif;
   color: #484848;
-  font-size: 20px;
+  font-size: 2rem;
 }
 .portfolio .sort-link-buttons {
   margin-bottom: 40px;
@@ -495,7 +498,7 @@ body {
   padding: 4px 2px;
   font-family: Lato-Regular, Arial, Helvetica, sans-serif;
   color: black;
-  font-size: 17px;
+  font-size: 1.7rem;
   border: 1px solid black;
   border-radius: 4px;
 }
@@ -564,13 +567,13 @@ body {
   margin: 0;
   font-family: Lato-Regular, Arial, Helvetica, sans-serif;
   color: black;
-  font-size: 20px;
+  font-size: 2rem;
 }
 .portfolio .thumbnail .thumbnail-figure-category {
   margin: 0;
   font-family: Lato-Regular, Arial, Helvetica, sans-serif;
   color: #777777;
-  font-size: 15px;
+  font-size: 1.5rem;
 }
 .contact .contact-form {
   display: inline-block;
@@ -585,7 +588,7 @@ body {
   width: 100%;
   padding: 10px;
   border: 1px solid #676767;
-  font-size: 20px;
+  font-size: 2.0rem;
   margin-bottom: 15px;
   box-sizing: border-box;
 }
@@ -607,29 +610,27 @@ body {
   margin-top: 0;
   font-family: Arial, Arial, Helvetica, sans-serif;
   color: #676767;
-  font-size: 20px;
+  font-size: 2rem;
 }
 .contact .contact-information .location {
   font-weight: bold;
   font-family: Arial, Arial, Helvetica, sans-serif;
   color: black;
-  font-size: 20px;
+  font-size: 2rem;
 }
 .contact .contact-information .phone-numbers-list {
   font-weight: bold;
   font-family: Arial, Arial, Helvetica, sans-serif;
   color: black;
-  font-size: 20px;
+  font-size: 2rem;
 }
-.contact .contact-information .phone-numbers-list dt,
-.contact .contact-information .phone-numbers-list dd {
-  display: inline-block;
-  margin: 0;
+.contact .contact-information .phone-numbers-list dt {
+  float: left;
 }
 .contact .contact-information .social-link {
   width: 50px;
   height: 50px;
-  font-size: 30px;
+  font-size: 3.0rem;
 }
 .footer {
   text-align: center;
@@ -651,5 +652,5 @@ body {
   display: inline-block;
   font-family: Existence, Arial, Helvetica, sans-serif;
   color: #676767;
-  font-size: 50px;
+  font-size: 5rem;
 }

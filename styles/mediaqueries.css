@@ -103,17 +103,17 @@
   .header .main-logo {
     font-family: Existence, "Helvetica Neue", Arial, Helvetica, sans-serif;
     color: white;
-    font-size: 70px;
+    font-size: 7rem;
   }
   .header h2 {
     font-family: Lato-Thin, "Helvetica Neue", Arial, Helvetica, sans-serif;
     color: white;
-    font-size: 35px;
+    font-size: 3.5rem;
   }
   .header p {
     font-family: Lato-Thin, "Helvetica Neue", Arial, Helvetica, sans-serif;
     color: white;
-    font-size: 24px;
+    font-size: 2.4rem;
   }
 }
 @media (max-width: 907px) {
@@ -159,7 +159,7 @@
     padding: 15px;
   }
   .main .quote {
-    font-size: 15px;
+    font-size: 1.5rem;
     height: 340px;
   }
   .main .services .services-values {
@@ -177,10 +177,10 @@
     margin-bottom: 0;
   }
   .main .team .team-member .team-member-name {
-    font-size: 11px;
+    font-size: 1.1rem;
   }
   .main .team .team-member .team-member-position {
-    font-size: 9px;
+    font-size: 0.9rem;
   }
 }
 @media (max-width: 460px) {
@@ -188,10 +188,10 @@
     padding: 20px;
   }
   .header .main-logo {
-    font-size: 48px;
+    font-size: 4.8rem;
   }
   .main .header-title {
-    font-size: 40px;
+    font-size: 4.0rem;
   }
   .main .section-title {
     padding: 10px;
@@ -200,7 +200,7 @@
     width: 100%;
   }
   .main .about .about-content .about-text {
-    font-size: 17px;
+    font-size: 1.7rem;
     width: 100%;
   }
   .main .about .about-content .main-button {
@@ -208,17 +208,17 @@
     height: 50px;
   }
   .main .services .services-values .service-value .value {
-    font-size: 40px;
+    font-size: 4.0rem;
   }
   .main .services .service-img {
     width: 100px;
     height: 100px;
   }
   .main .services q {
-    font-size: 17px;
+    font-size: 1.7rem;
   }
   .main .services p {
-    font-size: 13px;
+    font-size: 1.3rem;
   }
 }
 @media (max-width: 350px) {
