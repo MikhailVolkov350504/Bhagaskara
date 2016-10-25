@@ -2,6 +2,9 @@
 @text-color: #676767;
 @background-color: #eeeeee;
 @main-dark-color: #6b2e68;
+@names-color: #484848;
+@chart-base-color: #f0f0f0;
+@thumbnail-category-color: #777777;
 
 html,body,h1, ul, li { //reset css
   margin: 0;
@@ -22,6 +25,12 @@ html,body,h1, ul, li { //reset css
   src: local("Lato-Regular"),
   url("../resources/Fonts/Lato-Regular.ttf");
 }
+@font-face {
+  font-family: Helvetica-Neue;
+  src: local("Helvetica-Neue"),
+  url("../resources/Fonts/helveticaneuecyr-light.otf");
+}
+
 html, body {
   height: 100%;
 }
@@ -52,7 +61,7 @@ html, body {
   }
 }
 .font-style(@_font-family, @_font-color, @_font-size) {
-  font-family: @_font-family, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: @_font-family, Arial, Helvetica, sans-serif;
   color: @_font-color;
   font-size: @_font-size;
 }
@@ -61,6 +70,15 @@ html, body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.portfolio-plus-icon {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 150px;
+  background: white;
+  z-index: 2;
+  .center-position;
 }
 .clear-fix {
   &:after {
@@ -72,7 +90,7 @@ html, body {
   }
 }
 .header-title {
-  font-family: Existence, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: Existence, "Helvetica-Neue", Arial, Helvetica, sans-serif;
     strong {
       color: @main-color;
     }
@@ -136,11 +154,37 @@ html, body {
   section {
     padding: 70px;
   }
+  .header-title-link {
+    display: block;
+  }
   .section-title {
     font-size: 55px;
     margin-bottom: 70px;
+    position: relative;
+    display: inline-block;
+    padding: 30px;
   }
-  .more-content-link-button {
+  .section-title::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top:0;
+    right: 0;
+    border-right: 1px solid @main-color;
+    border-top: 1px solid @main-color;
+  }
+  .section-title::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    bottom:0;
+    left: 0;
+    border-left: 1px solid @main-color;
+    border-bottom: 1px solid @main-color;
+  }
+  .main-button {
     background-color: @main-color;
     width: 228px;
     height: 72px;
@@ -236,10 +280,10 @@ html, body {
       height: 200px;
     }
     .team-member-name {
-      .font-style(Lato-Regular, #484848, 20px);
+      .font-style(Lato-Regular, @names-color, 20px);
     }
     .team-member-position {
-      .font-style(Lato-Thin, #484848, 14px);
+      .font-style(Lato-Thin, @names-color, 14px);
     }
     .social-link {
       width: 40px;
@@ -253,12 +297,12 @@ html, body {
 }
 .social-link {
   display: inline-block;
-  .link-decoration(#484848,#484848, white);
+  .link-decoration(@names-color,@names-color, white);
   font-size: 23px;
-  border: 1px solid #484848;
+  border: 1px solid @names-color;
   border-radius: 50%;
   position: relative;
-  font-family: Lato-Regular, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: Lato-Regular, Arial, Helvetica, sans-serif;
   &:hover {
     background-color: @main-color;
     border-color: @main-color;
@@ -288,14 +332,14 @@ html, body {
     .chart-name {
       float: left;
       margin: 0;
-      .font-style(Lato-Regular, #484848, 18px);
+      .font-style(Lato-Regular, @names-color, 18px);
     }
     .chart-percentage {
       float: right;
-      .font-style(Lato-Thin, #484848, 20px);
+      .font-style(Lato-Thin, @names-color, 20px);
     }
     .chart-base {
-      background-color: #f0f0f0;
+      background-color: @chart-base-color;
       height: 20px;
     }
     .chart-level {
@@ -330,10 +374,10 @@ html, body {
     text-align: center;
     .margin-between-elements(25px);
     .value {
-      .font-style(Lato-Thin, black, 55px);
+      .font-style("Helvetica-Neue", black, 55px);
     }
     .caption {
-      .font-style(Lato-Thin, #484848, 15px);
+      .font-style("Helvetica-Neue", @names-color, 15px);
     }
   }
   .service-img {
@@ -344,21 +388,25 @@ html, body {
     margin-right: auto;
   }
   q {
-    .font-style(Lato-Thin, #484848, 26px);
+    .font-style("Helvetica-Neue", @names-color, 26px);
   }
   p {
-    .font-style(Lato-Thin, #484848, 20px);
+    .font-style("Helvetica-Neue", @names-color, 20px);
   }
 }
 .portfolio {
   .sort-link-buttons {
     margin-bottom: 40px;
+    list-style: none;
+    li {
+      display: inline-block;
+      .margin-between-elements(15px);
+    }
   }
   .sort-link-button {
     display: inline-block;
     width: 60px;
     padding: 4px 2px;
-    .margin-between-elements(15px);
     .link-decoration(black, black, white);
     .font-style(Lato-Regular, black, 17px);
     border: 1px solid black;
@@ -387,23 +435,11 @@ html, body {
     }
 
     .thumbnail-img-link:hover::before {//horizontal
-      content: '';
-      position: absolute;
-      width: 2px;
-      height: 150px;
-      background: white;
-      .center-position;
+      .portfolio-plus-icon;
       transform: translate(-50%, -50%) rotate(90deg);
-      z-index: 2;
     }
     .thumbnail-img-link:hover::after {//vertical
-      content: '';
-      position: absolute;
-      width: 2px;
-      height: 150px;
-      background: white;
-      z-index: 2;
-      .center-position;
+      .portfolio-plus-icon;
     }
     .thumbnail-img{
       width: 100%;
@@ -415,7 +451,7 @@ html, body {
     }
     .thumbnail-figure-category {
       margin: 0;
-      .font-style(Lato-Regular, #777777, 15px);
+      .font-style(Lato-Regular, @thumbnail-category-color, 15px);
     }
   }
 }
@@ -423,16 +459,54 @@ html, body {
   .contact-form {
     display: inline-block;
     max-width: 400px;
+    margin-right: 40px;
+    vertical-align: top;
+  }
+  textarea {
+    resize: none;
   }
   .form-field {
     width: 100%;
+    padding: 10px;
+    border: 1px solid @text-color;
+    font-size: 20px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    &[placeholder] {
+      text-overflow:ellipsis;
+      font-family: "Helvetica-Neue", Arial, Helvetica, sans-serif;
+    }
   }
   .submit-button{
     float: left;
   }
   .contact-information {
+    vertical-align: top;
     display: inline-block;
     max-width: 400px;
+    text-align: left;
+    font-style: normal;
+    .general-information {
+      margin-top: 0;
+      .font-style(Arial, @text-color, 20px);
+    }
+    .location {
+      font-weight: bold;
+      .font-style(Arial, black, 20px);
+    }
+    .phone-numbers-list {
+      font-weight: bold;
+      .font-style(Arial, black , 20px);
+      dt,dd {
+        display: inline-block;
+        margin: 0;
+      }
+    }
+    .social-link {
+      width: 50px;
+      height: 50px;
+      font-size: 30px;
+    }
   }
 }
 .footer {

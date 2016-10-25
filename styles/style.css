@@ -18,6 +18,10 @@ li {
   font-family: Lato-Regular;
   src: local("Lato-Regular"), url("../resources/Fonts/Lato-Regular.ttf");
 }
+@font-face {
+  font-family: Helvetica-Neue;
+  src: local("Helvetica-Neue"), url("../resources/Fonts/helveticaneuecyr-light.otf");
+}
 html,
 body {
   height: 100%;
@@ -52,6 +56,17 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.portfolio-plus-icon {
+  content: '';
+  width: 2px;
+  height: 150px;
+  background: white;
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .clear-fix:after {
   content: ".";
   display: block;
@@ -60,7 +75,7 @@ body {
   visibility: hidden;
 }
 .header-title {
-  font-family: Existence, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: Existence, "Helvetica-Neue", Arial, Helvetica, sans-serif;
 }
 .header-title strong {
   color: #9f449b;
@@ -75,17 +90,17 @@ body {
   background-size: cover;
 }
 .header .main-logo {
-  font-family: Existence, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: Existence, Arial, Helvetica, sans-serif;
   color: white;
   font-size: 90px;
 }
 .header h2 {
-  font-family: Lato-Thin, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: Lato-Thin, Arial, Helvetica, sans-serif;
   color: white;
   font-size: 48px;
 }
 .header p {
-  font-family: Lato-Thin, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: Lato-Thin, Arial, Helvetica, sans-serif;
   color: white;
   font-size: 34px;
 }
@@ -100,7 +115,7 @@ body {
   float: right;
 }
 .nav {
-  font-family: Lato-Regular, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: Lato-Regular, Arial, Helvetica, sans-serif;
   color: white;
   font-size: 20px;
   width: 60%;
@@ -151,38 +166,64 @@ body {
 .main section {
   padding: 70px;
 }
+.main .header-title-link {
+  display: block;
+}
 .main .section-title {
   font-size: 55px;
   margin-bottom: 70px;
+  position: relative;
+  display: inline-block;
+  padding: 30px;
 }
-.main .more-content-link-button {
+.main .section-title::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  right: 0;
+  border-right: 1px solid #9f449b;
+  border-top: 1px solid #9f449b;
+}
+.main .section-title::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  bottom: 0;
+  left: 0;
+  border-left: 1px solid #9f449b;
+  border-bottom: 1px solid #9f449b;
+}
+.main .main-button {
   background-color: #9f449b;
   width: 228px;
   height: 72px;
   display: inline-block;
   position: relative;
-  font-family: Lato-Regular, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: Lato-Regular, Arial, Helvetica, sans-serif;
   color: white;
   font-size: 18px;
   border-radius: 6px;
   border-bottom: 4px solid #6b2e68;
 }
-.main .more-content-link-button:link {
+.main .main-button:link {
   text-decoration: none;
   color: white;
 }
-.main .more-content-link-button:visited {
+.main .main-button:visited {
   text-decoration: none;
   color: white;
 }
-.main .more-content-link-button:hover {
+.main .main-button:hover {
   text-decoration: none;
   color: white;
 }
-.main .more-content-link-button:hover {
+.main .main-button:hover {
   background-color: #6b2e68;
 }
-.main .more-content-link-button span {
+.main .main-button span {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -212,12 +253,12 @@ body {
   margin-right: 0;
 }
 .main .benefits .benefits-wrapper .benefit h2 {
-  font-family: Lato-Thin, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: Lato-Thin, Arial, Helvetica, sans-serif;
   color: #676767;
   font-size: 24px;
 }
 .main .benefits .benefits-wrapper .benefit p {
-  font-family: Lato-Thin, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: Lato-Thin, Arial, Helvetica, sans-serif;
   color: #676767;
   font-size: 18px;
 }
@@ -242,7 +283,7 @@ body {
   box-sizing: border-box;
 }
 .main .about .about-text p {
-  font-family: Lato-Thin, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: Lato-Thin, Arial, Helvetica, sans-serif;
   color: #676767;
   font-size: 20px;
 }
@@ -251,7 +292,7 @@ body {
   background-position: center;
   height: 624px;
   background-size: cover;
-  font-family: Lato-Thin, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: Lato-Thin, Arial, Helvetica, sans-serif;
   color: white;
   font-size: 25px;
   position: relative;
@@ -283,12 +324,12 @@ body {
   height: 200px;
 }
 .team .team-member .team-member-name {
-  font-family: Lato-Regular, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: Lato-Regular, Arial, Helvetica, sans-serif;
   color: #484848;
   font-size: 20px;
 }
 .team .team-member .team-member-position {
-  font-family: Lato-Thin, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: Lato-Thin, Arial, Helvetica, sans-serif;
   color: #484848;
   font-size: 14px;
 }
@@ -306,7 +347,7 @@ body {
   border: 1px solid #484848;
   border-radius: 50%;
   position: relative;
-  font-family: Lato-Regular, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: Lato-Regular, Arial, Helvetica, sans-serif;
 }
 .social-link:link {
   text-decoration: none;
@@ -358,13 +399,13 @@ body {
 .skills .chart .chart-name {
   float: left;
   margin: 0;
-  font-family: Lato-Regular, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: Lato-Regular, Arial, Helvetica, sans-serif;
   color: #484848;
   font-size: 18px;
 }
 .skills .chart .chart-percentage {
   float: right;
-  font-family: Lato-Thin, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: Lato-Thin, Arial, Helvetica, sans-serif;
   color: #484848;
   font-size: 20px;
 }
@@ -411,12 +452,12 @@ body {
   margin-right: 0;
 }
 .services .service-value .value {
-  font-family: Lato-Thin, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: "Helvetica-Neue", Arial, Helvetica, sans-serif;
   color: black;
   font-size: 55px;
 }
 .services .service-value .caption {
-  font-family: Lato-Thin, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: "Helvetica-Neue", Arial, Helvetica, sans-serif;
   color: #484848;
   font-size: 15px;
 }
@@ -428,31 +469,35 @@ body {
   margin-right: auto;
 }
 .services q {
-  font-family: Lato-Thin, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: "Helvetica-Neue", Arial, Helvetica, sans-serif;
   color: #484848;
   font-size: 26px;
 }
 .services p {
-  font-family: Lato-Thin, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: "Helvetica-Neue", Arial, Helvetica, sans-serif;
   color: #484848;
   font-size: 20px;
 }
 .portfolio .sort-link-buttons {
   margin-bottom: 40px;
+  list-style: none;
+}
+.portfolio .sort-link-buttons li {
+  display: inline-block;
+  margin-right: 15px;
+}
+.portfolio .sort-link-buttons li:last-child {
+  margin-right: 0;
 }
 .portfolio .sort-link-button {
   display: inline-block;
   width: 60px;
   padding: 4px 2px;
-  margin-right: 15px;
-  font-family: Lato-Regular, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: Lato-Regular, Arial, Helvetica, sans-serif;
   color: black;
   font-size: 17px;
   border: 1px solid black;
   border-radius: 4px;
-}
-.portfolio .sort-link-button:last-child {
-  margin-right: 0;
 }
 .portfolio .sort-link-button:link {
   text-decoration: none;
@@ -493,12 +538,12 @@ body {
   width: 2px;
   height: 150px;
   background: white;
+  z-index: 2;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   transform: translate(-50%, -50%) rotate(90deg);
-  z-index: 2;
 }
 .portfolio .thumbnail .thumbnail-img-link:hover::after {
   content: '';
@@ -517,29 +562,74 @@ body {
 }
 .portfolio .thumbnail .thumbnail-figcaption {
   margin: 0;
-  font-family: Lato-Regular, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: Lato-Regular, Arial, Helvetica, sans-serif;
   color: black;
   font-size: 20px;
 }
 .portfolio .thumbnail .thumbnail-figure-category {
   margin: 0;
-  font-family: Lato-Regular, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: Lato-Regular, Arial, Helvetica, sans-serif;
   color: #777777;
   font-size: 15px;
 }
 .contact .contact-form {
   display: inline-block;
   max-width: 400px;
+  margin-right: 40px;
+  vertical-align: top;
+}
+.contact textarea {
+  resize: none;
 }
 .contact .form-field {
   width: 100%;
+  padding: 10px;
+  border: 1px solid #676767;
+  font-size: 20px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+.contact .form-field[placeholder] {
+  text-overflow: ellipsis;
+  font-family: "Helvetica-Neue", Arial, Helvetica, sans-serif;
 }
 .contact .submit-button {
   float: left;
 }
 .contact .contact-information {
+  vertical-align: top;
   display: inline-block;
   max-width: 400px;
+  text-align: left;
+  font-style: normal;
+}
+.contact .contact-information .general-information {
+  margin-top: 0;
+  font-family: Arial, Arial, Helvetica, sans-serif;
+  color: #676767;
+  font-size: 20px;
+}
+.contact .contact-information .location {
+  font-weight: bold;
+  font-family: Arial, Arial, Helvetica, sans-serif;
+  color: black;
+  font-size: 20px;
+}
+.contact .contact-information .phone-numbers-list {
+  font-weight: bold;
+  font-family: Arial, Arial, Helvetica, sans-serif;
+  color: black;
+  font-size: 20px;
+}
+.contact .contact-information .phone-numbers-list dt,
+.contact .contact-information .phone-numbers-list dd {
+  display: inline-block;
+  margin: 0;
+}
+.contact .contact-information .social-link {
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
 }
 .footer {
   text-align: center;
@@ -559,7 +649,7 @@ body {
 }
 .footer .header-title {
   display: inline-block;
-  font-family: Existence, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: Existence, Arial, Helvetica, sans-serif;
   color: #676767;
   font-size: 50px;
 }

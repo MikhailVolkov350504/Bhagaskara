@@ -88,19 +88,30 @@
     margin-right: 0;
   }
 }
+@media (max-width: 983px) {
+  .contact .submit-button {
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 923px) {
+  .thumbnails .thumbnail .thumbnail-background {
+    width: 180px;
+    height: 180px;
+  }
+}
 @media (max-width: 920px) {
   .header .main-logo {
-    font-family: Existence, Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-family: Existence, "Helvetica Neue", Arial, Helvetica, sans-serif;
     color: white;
     font-size: 70px;
   }
   .header h2 {
-    font-family: Lato-Thin, Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-family: Lato-Thin, "Helvetica Neue", Arial, Helvetica, sans-serif;
     color: white;
     font-size: 35px;
   }
   .header p {
-    font-family: Lato-Thin, Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-family: Lato-Thin, "Helvetica Neue", Arial, Helvetica, sans-serif;
     color: white;
     font-size: 24px;
   }
@@ -182,6 +193,9 @@
   .main .header-title {
     font-size: 40px;
   }
+  .main .section-title {
+    padding: 10px;
+  }
   .main .about .about-content {
     width: 100%;
   }
@@ -189,7 +203,7 @@
     font-size: 17px;
     width: 100%;
   }
-  .main .about .about-content .more-content-link-button {
+  .main .about .about-content .main-button {
     width: 185px;
     height: 50px;
   }
@@ -205,5 +219,10 @@
   }
   .main .services p {
     font-size: 13px;
+  }
+}
+@media (max-width: 350px) {
+  .portfolio .sort-link-buttons li {
+    margin-right: 0;
   }
 }
